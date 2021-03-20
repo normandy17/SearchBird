@@ -1,2 +1,0 @@
-# SearchBird
-All about birds

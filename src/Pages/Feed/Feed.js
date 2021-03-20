@@ -78,9 +78,11 @@ export const Feed = () => {
           birds.length > 0 && birds.map((item) => (
             <Grid item sm={12} md={8} lg={4} style={{ width: "18%" }} key={item._id}>
               <Card className={classes.root}>
-                <div style={{ width: "150px", height: "150px", borderRadius: "75px", background: "blue", marginTop: "7%", marginLeft: "20px" }}>
+                <div style={{ width: "150px", height: "150px", borderRadius: "75px", background: "blue", marginTop: "7%", marginLeft: "20px"}}>
                   <img src={item.image} alt="Bird DP" width="150px" height="150px" style={{ borderRadius: "75px" }} />
+                  <Button size="small" onClick={() => handleClick(item._id)} style={{ marginLeft: "30px", marginTop: "10px", color: "inherit" }}>View More</Button>
                 </div>
+                
                 <div>
                   <CardContent style={{ height: "170px" }}>
                     <Typography variant="h5" component="h2" style={{ marginBottom: "20px", color: "inherit" }}>
@@ -97,7 +99,7 @@ export const Feed = () => {
                     </div>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" onClick={() => handleClick(item._id)} style={{ marginLeft: "34%", marginTop: "30px", color: "inherit" }}>View More</Button>
+                    
                   </CardActions>
                 </div>
               </Card>
